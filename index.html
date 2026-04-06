@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>raviere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="card">
+  <div class="avatar-wrap">
+    <video autoplay loop muted playsinline>
+      <source src="avatar.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="nickname">raviere</div>
+  <div class="buttons">
+  <a class="btn" href="http://t.me/jsugu" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.04c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.191c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.2c.595-.394 1.136-.176.691.218L9.417 15.18z" fill="#fff"/>
+    </svg>
+  </a>
+  <a class="btn" href="https://github.com/xRaviere/raviere/tree/main" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  </div>
+</div>
+
+<script type="module">
+import { initShader } from './shader.js';
+initShader(document.getElementById('bg'));
+</script>
+</body>
+</html>
